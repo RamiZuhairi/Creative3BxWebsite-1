@@ -1,0 +1,56 @@
+{
+  "site": {
+    "title": "Creative3Bx",
+    "base_url": "/",
+    "MetaLogo": "/images/MetaLogo2.png",
+    "logo": "/images/Logo-Creative3BxWhite.svg",  
+    "logo_white": "/images/Logo-Creative3BxDark.svg",
+    "logo_width": "250",
+    "logo_height": "70",
+    "logo_text": "Creative3Bx"
+  },
+  "settings": {
+    "theme_switcher": true,
+    "default_theme": "system",
+    "pagination": 6,
+    "summary_length": 200,
+    "blog_folder": "posts"
+  },
+  "params": {
+    "tag_manager_id": "",
+    "footer_content": "Unlock the potential of your online reputation with Creative3Bx.❤️",
+    "copyrightCompanyName": "Creative3Bx | All rights reserved | Designed with ❤️ by [Creative3Bx] | Contact us: Info@GirlsContentHub.com"
+  },
+  "metadata": {
+    "meta_author": "Creative3Bx team",
+    "meta_image": "/images/MetaLogo2.png",
+    "meta_description": "Creative3Bx for business"
+  },
+  "widgets": {
+    "about": {
+      "enable": true,
+      "content": "Supercharge your business's success with Creative3Bx - the ultimate solution for enhancing your online reputation and attracting more customers."
+    },
+    "featured_posts": {
+      "enable": true,
+      "title": "Blog Categories",
+      "showPost": 3
+    },
+    "categories": {
+      "enable": true,
+      "title": "Blog Categories"
+    },
+    "newsletter": {
+      "enable": true,
+      "title": "Newsletter",
+      "content": "Join thousands of Tiny Salt subscribers and get our best recipes delivered each week!",
+      "privacy_policy_page": "www.GirlsContentHub.com",
+      "malichipm_url": "www.GirlsContentHub.com"
+    }
+  },
+  "disqus": {
+    "enable": true,
+    "shortname": "themefisher-template",
+    "settings": {}
+  }
+}

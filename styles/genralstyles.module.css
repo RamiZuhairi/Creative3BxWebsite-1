@@ -1,0 +1,131 @@
+.contactusBtn {
+    width: 150px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+    gap: 9px;
+    color: white;
+    background: linear-gradient(to right,rgb(188, 15, 15),rgb(98, 1, 1));
+    position: relative;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.212);
+    margin-left: -10px;
+  }
+  
+  .arrow {
+    position: absolute;
+    right: 7.5px;
+    background-color: rgb(255, 255, 255);
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  
+  .contactusBtn:hover .arrow {
+    animation: slide-in-left 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  
+  @keyframes slide-in-left {
+    0% {
+      transform: translateX(-10px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .startButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    border-radius: 36px;
+    font-weight: 700;
+    height: 54px;
+    font-size: 16px;
+    padding-inline: 20px;
+    background-color: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    overflow: hidden;
+    text-align: center;
+    transition: all .25s ease-in-out;
+    z-index: 1;
+    border: none;
+  }
+  
+  .startButton:is(:hover, :focus)::before {
+    transform: translateX(0%);
+  }
+  
+  .startText {
+    white-space: nowrap;
+    line-height: 1.2;
+    padding-inline-end: 44px;
+    z-index: 2;
+  }
+  
+  /* change the width and height to 100% when you use it in your layout */
+   /* change the width and height to 100% when you use it in your layout */
+   .startButton::after {
+    content: '';
+    position: absolute;
+    height: calc(100% - 2px);
+    width: calc(100% - 2px);
+    border: 1px solid #5b0b01;
+    border-radius: 45px;
+    background: linear-gradient(to right, #E53E3E, #e5813e, #F56565);
+    transition: all 0.3s ease-out;
+  }
+  
+  .startButton::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, #7F1D1D, #E53E3E);
+    z-index: 1;
+    left: -2px;
+    transform: translateX(90%);
+    transition: all 0.3s ease-out;
+  }
+  
+  .startButton:hover::before {
+    background: linear-gradient(to right, #7F1D1D, #E53E3E);
+    transform: translateX(0%);
+  }
+  
+  .startButton:hover .startText {
+    color: #fff;
+  }
+  
+  .startIcon {
+    display: inherit;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 54px;
+    height: 54px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background: linear-gradient(to right,#7F1D1D, #E53E3E );
+    z-index: 2;
+  }
+  
+  .startButton:hover .startIcon {
+    color: #fff;
+  }
+  

@@ -1,0 +1,55 @@
+{
+  "main": [
+    {
+      "name": "📞0431449645, Info@GirlsContentHub.com",
+      "url": "/contact"
+      
+    },
+    {
+      "name": "Home",
+      "url": "/"
+      
+    },
+    {
+      "name": "Support",
+      "url": "/contact"
+    },
+    {
+      "name": "Services",
+      "url": "/services"
+    },
+    {
+      "name": "About",
+      "url": "/about"
+    },
+    {
+      "name": "Pages",
+      "url": "",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "Categories",
+          "url": "/categories"
+        }
+      ]
+    }
+  ],
+  "footer": [
+    {
+      "name": "Home",
+      "url": "/"
+    },
+    {
+      "name": "About",
+      "url": "/about"
+    },
+    {
+      "name": "Contact",
+      "url": "/contact"
+    },
+    {
+      "name": "Privacy Policy",
+      "url": "#"
+    }
+  ]
+}

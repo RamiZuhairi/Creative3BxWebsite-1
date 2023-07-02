@@ -1,0 +1,52 @@
+/* * {
+  font-family: Avenir !important;
+} */
+
+.ce-my-message-bubble {
+  background-color: #7f1d1d !important;
+}
+
+.ce-chat-title-text {
+  color: #7f1d1d !important;
+}
+
+.ce-chat-subtitle-text {
+  color: #7f1d1d !important;
+  font-weight: 600;
+}
+
+#ce-send-message-button {
+  position: relative !important;
+  bottom: 2px !important;
+  left: 1px !important;
+  background-color: #7f1d1d !important;
+}
+
+.ce-my-message-timestamp {
+  color: #7f1d1d !important;
+}
+
+.transition-3 {
+  transition: all 0.33s ease;
+  -webkit-transition: all 0.33s ease;
+  -moz-transition: all 0.33s ease;
+}
+
+.transition-5 {
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+}
+
+.ql-editor {
+  cursor: pointer;
+  color: black;
+  padding: 12px;
+  font-size: 15px;
+  white-space: pre-line;
+  border-radius: 0.3em 1.3em 1.3em;
+}
+.ce-chat-feed {
+  max-height: 400px; /* Adjust the value as needed */
+  overflow-y: auto;
+}
