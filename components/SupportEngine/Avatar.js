@@ -71,8 +71,8 @@ const Avatar = (props) => {
           </button>
 
           <span className="rounded-lg text-sm shadow-md">
-            Hello! Need help? Drop us a message and we'll get back to you as
-            soon as possible. We're always here for you 😃!!!
+            Hello! Need help? Drop us a message and we&apos;ll get back to you as
+            soon as possible. We&apos;re always here for you 😃!!!
           </span>
         </div>
       )}

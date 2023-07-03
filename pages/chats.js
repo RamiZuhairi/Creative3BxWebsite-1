@@ -13,7 +13,7 @@ export default function Home() {
     if (typeof document !== undefined) {
       setShowChat(true);
     }
-  }, []);
+  }, [router]);
 
   useEffect(() => {
     if (username === "" || secret === "") {
