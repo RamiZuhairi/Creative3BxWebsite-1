@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useMemo, useState, useEffect } from "react";
 import { styles } from "./styles";
 import ChatNotificationIcon from "./SupportWindow/ChatNotificationIcon";
 import Image from "next/image";
@@ -8,18 +8,19 @@ const Avatar = (props) => {
   const [isVisible, setIsVisible] = useState(false); // to show and hide the chat messsage
   const [isVisibleXImg, setisVisibleXImg] = useState(false); // to show and hide the chat messsage
   const [closeButtonHovered, setCloseButtonHovered] = useState(false);
-  const selfImages = [
+  const selfImages = useMemo(() => [
     "/images/chatEngineImgs/Rami.jpg",
     "/images/chatEngineImgs/self2Jassica.png",
     "/images/chatEngineImgs/self3Kai.png",
     "/images/chatEngineImgs/self4Sarah.png",
-  ];
+  ], []);
+
   const [randomImage, setRandomImage] = useState("");
-   // Move the random image selection into a useEffect hook so that it only runs on the client side
-   useEffect(() => {
+  // Move the random image selection into a useEffect hook so that it only runs on the client side
+  useEffect(() => {
     setRandomImage(selfImages[Math.floor(Math.random() * selfImages.length)]);
-  }, []);
-  
+  }, [selfImages]);
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(true);
