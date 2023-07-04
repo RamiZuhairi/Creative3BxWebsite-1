@@ -8,12 +8,15 @@ const Avatar = (props) => {
   const [isVisible, setIsVisible] = useState(false); // to show and hide the chat messsage
   const [isVisibleXImg, setisVisibleXImg] = useState(false); // to show and hide the chat messsage
   const [closeButtonHovered, setCloseButtonHovered] = useState(false);
-  const selfImages = useMemo(() => [
-    "/images/chatEngineImgs/Rami.jpg",
-    "/images/chatEngineImgs/self2Jassica.png",
-    "/images/chatEngineImgs/self3Kai.png",
-    "/images/chatEngineImgs/self4Sarah.png",
-  ], []);
+  const selfImages = useMemo(
+    () => [
+      "/images/chatEngineImgs/Rami.jpg",
+      "/images/chatEngineImgs/self2Jassica.png",
+      "/images/chatEngineImgs/self3Kai.png",
+      "/images/chatEngineImgs/self4Sarah.png",
+    ],
+    []
+  );
 
   const [randomImage, setRandomImage] = useState("");
   // Move the random image selection into a useEffect hook so that it only runs on the client side
@@ -72,8 +75,8 @@ const Avatar = (props) => {
           </button>
 
           <span className="rounded-lg text-sm shadow-md">
-            Hello! Need help? Drop us a message and we&apos;ll get back to you as
-            soon as possible. We&apos;re always here for you 😃!!!
+            Hello! Need help? Drop us a message and we&apos;ll get back to you
+            as soon as possible. We&apos;re always here for you 😃!!!
           </span>
         </div>
       )}
